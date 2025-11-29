@@ -40,14 +40,13 @@ function Simpleform() {
 
   return (
     <div className="min-h-screen w-full flex justify-center items-center p-4 bg-blue-50">
-      {/* Changed width to be responsive */}
+   
       <form 
         className="border-blue-800 border-2 w-full max-w-md p-6 flex flex-col items-center rounded-md bg-white shadow-md"
         onSubmit={prevent}
       >
         <h1 className="text-3xl text-blue-800 font-medium mb-4 text-center">Form</h1>
 
-        {/* Name Field */}
         <div className="w-full mb-4">
           <label className="text-blue-950 text-[16px] font-medium block mb-1">Name:</label>
           <input 
@@ -58,7 +57,7 @@ function Simpleform() {
           {errors.name && <p className="text-red-600 mt-1 text-sm">{errors.name}</p>}
         </div>
 
-        {/* Password Field */}
+   
         <div className="w-full mb-4">
           <label className="text-blue-950 text-[16px] font-medium block mb-1">Password:</label>
           <input 
